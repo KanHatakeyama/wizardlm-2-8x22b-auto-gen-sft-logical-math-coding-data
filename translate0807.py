@@ -98,7 +98,7 @@ print(len(eng_content_list), " english contents")
 
 def load_dict():
     en_ja_dict = {}
-    for en_ja_dict_path in glob.glob("out_translated_ja/*.jsonl"):
+    for en_ja_dict_path in glob.glob(f"{out_dir}/*.jsonl"):
         print("loading ", en_ja_dict_path)
         with open(en_ja_dict_path) as f:
             lines = f.readlines()
